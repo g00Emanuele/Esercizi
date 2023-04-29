@@ -40,6 +40,10 @@ h1 {
     text-align: center;
 }
 
+img {
+    border-radius: 1em;
+}
+
 .featured {
     background-color: beige;
     border-left: 2px solid rgb(184, 177, 0);
