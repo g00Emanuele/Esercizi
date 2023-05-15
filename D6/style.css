@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.card .save img {
+    width: 300px;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+.card .save {
+    position: absolute;
+    top: -10%;
+    right: 10px;
+    color: white;
+    text-align: center;
+    width: 70px;
+    background-color: red;
+    border-radius: 50px;
+    line-height: 0.5em;
+    transition: top 1s;
+}
+
+.card:hover .save{
+    top: 10px;
+    right: 10px;
+}
+
+.info {
+    position: absolute;
+    left: 10px;
+    bottom: -35px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 0.5em;
+    height: 38px;
+    transition: bottom 1s;
+}
+
+.share {
+    position: absolute;
+    background-color: white;
+    right: 52px;
+    bottom: -35px;
+    border-radius: 50%;
+    object-fit: contain;
+    overflow: hidden;
+    padding: 2px;
+    transition: bottom 1s;
+}
+
+.set {
+    position: absolute;
+    background-color: white;
+    right: 10px;
+    bottom: -35px;
+    border-radius: 50%;
+    object-fit: contain;
+    overflow: hidden;
+    padding: 2px;
+    transition: bottom 1s;
+}
+
+.card:hover .info, .card:hover .share, .card:hover .set {
+    bottom: 10px;
+}
